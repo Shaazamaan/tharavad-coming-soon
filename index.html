@@ -15,7 +15,7 @@
     html{min-height:100%;background:var(--forest)}
     body{margin:0;min-height:100vh;min-height:100svh;background:var(--forest);color:var(--ivory);font-family:"DM Sans",sans-serif}
     body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background:radial-gradient(ellipse at 50% 15%,#536949 0,transparent 53%),linear-gradient(120deg,transparent 45%,#203b2c 100%)}
-    .page{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:42px 22px;overflow:hidden;isolation:isolate}
+    .page{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:42px 22px;overflow:hidden;isolation:isolate;background:linear-gradient(90deg,rgba(10,20,14,.62),rgba(10,20,14,.73)),url("https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=2000&q=90") center/cover no-repeat}
     .ornament{position:absolute;width:min(78vw,850px);aspect-ratio:1;border:1px solid #d2b47720;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);z-index:-1}
     .ornament:before,.ornament:after{content:"";position:absolute;inset:24px;border:1px solid #d2b47716;border-radius:50%}
     .ornament:after{inset:60px}
@@ -28,16 +28,16 @@
     h1{font:400 clamp(48px,8.2vw,92px)/.98 "Cormorant Garamond",serif;letter-spacing:-.025em;margin:0 auto;max-width:850px}
     h1 em{font-weight:400;color:var(--gold)}
     .description{color:var(--muted);font-size:clamp(14px,1.7vw,17px);line-height:1.9;max-width:560px;margin:26px auto 0}
-    .status{display:inline-flex;align-items:center;gap:11px;margin-top:36px;border:1px solid #d2b47750;border-radius:999px;padding:12px 18px;color:#ead8ae;font-size:10px;letter-spacing:.19em;text-transform:uppercase}
+    .status{display:inline-flex;align-items:center;gap:11px;margin-top:36px;border:1px solid #d2b47790;border-radius:999px;padding:13px 22px;color:#f6d99c;background:#17190f88;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;box-shadow:0 0 35px #d2b47715}
     .dot{height:6px;width:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px #d2b47718;animation:pulse 2s ease-in-out infinite}
-    .heritage{margin:42px auto 0;max-width:430px;display:flex;align-items:center;gap:18px;color:#b5b9aa;font:italic 22px "Cormorant Garamond",serif}
+    .heritage{margin:32px auto 0;max-width:590px;display:flex;align-items:center;gap:18px;color:#e7dfcd;font:italic 22px "Cormorant Garamond",serif;text-shadow:0 2px 15px #000}
     .heritage:before,.heritage:after{content:"";height:1px;flex:1;background:#d2b47745}
-    .contact-name{margin-top:18px;color:#d2b477;font-size:12px;letter-spacing:.08em} .status{cursor:pointer;transition:background .2s,color .2s}.status:hover{background:#d2b47718;color:#fff}footer{position:absolute;bottom:22px;left:22px;right:22px;display:flex;justify-content:center;text-align:center;color:#8f9c8c;font-size:10px;letter-spacing:.08em}
+    .status{transition:background .2s,color .2s}footer{position:absolute;bottom:22px;left:22px;right:22px;display:flex;justify-content:center;text-align:center;color:#8f9c8c;font-size:10px;letter-spacing:.08em}
     .glow{position:absolute;top:12%;left:50%;width:260px;height:260px;transform:translateX(-50%);border-radius:50%;background:#d2b4770a;filter:blur(50px);z-index:-1;animation:breathe 8s ease-in-out infinite alternate}
     @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
     @keyframes pulse{0%,100%{box-shadow:0 0 0 4px #d2b47712}50%{box-shadow:0 0 0 8px #d2b47704}}
     @keyframes breathe{from{opacity:.45;transform:translateX(-50%) scale(.8)}to{opacity:1;transform:translateX(-50%) scale(1.2)}}
-    @media(max-width:600px){.page{padding:30px 23px 74px}.logo{width:78px;height:78px;margin-bottom:18px}.english-wordmark{font-size:16px;letter-spacing:.15em}.submark{font-size:9px;letter-spacing:.27em}.rule{margin:28px auto}.eyebrow{font-size:9px;letter-spacing:.2em;line-height:1.8}.coming-soon-title{font-size:clamp(65px,18vw,105px)}.coming-soon-sub{font-size:27px;line-height:1.2;margin-top:20px}h1{font-size:clamp(49px,13vw,72px)}.description{font-size:14px;line-height:1.85;margin-top:22px}.status{font-size:9px;letter-spacing:.12em;padding:11px 14px;margin-top:30px}.heritage{margin-top:32px;font-size:20px;gap:11px}footer{bottom:17px;font-size:9px}}
+    @media(max-width:600px){.page{padding:30px 23px 74px}.logo{width:78px;height:78px;margin-bottom:18px}.english-wordmark{font-size:16px;letter-spacing:.15em}.submark{font-size:9px;letter-spacing:.27em}.rule{margin:28px auto}.eyebrow{font-size:9px;letter-spacing:.2em;line-height:1.8}.coming-soon-title{font-size:clamp(65px,18vw,105px)}.coming-soon-sub{font-size:27px;line-height:1.2;margin-top:20px}h1{font-size:clamp(49px,13vw,72px)}.description{font-size:14px;line-height:1.85;margin-top:22px}.status{font-size:9px;letter-spacing:.12em;padding:11px 14px;margin-top:30px}.heritage{margin-top:27px;font-size:20px;gap:11px}footer{bottom:17px;font-size:9px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
@@ -61,8 +61,8 @@
       <h1 class="coming-soon-title"><span>Coming</span><span>Soon</span></h1>
       <p class="coming-soon-sub">Our family has a story. <em style="color:var(--gold)">Our legacy lives on.</em></p>
       <p class="description">The generations before us shaped who we are. Their stories, memories, and traditions belong to all of us. We are creating a place for our family to grow its family tree, share its history, and pass our legacy from one generation to the next, wherever life takes us.</p>
-      <a class="status" href="tel:+918137826016" aria-label="Call Shaazamaan Shaji at 8137826016"><span class="dot" aria-hidden="true"></span>Coming soon <span aria-hidden="true">·</span> Call 8137826016</a>
-      <p class="heritage">One family. Many generations. Our shared legacy.</p><p class="contact-name">Shaazamaan Shaji</p>
+      <div class="status"><span class="dot" aria-hidden="true"></span>Coming soon</div>
+      <p class="heritage">We remember the roots we came from, and grow together for generations to come.</p>
     </section>
     <footer>THARAVAD &nbsp;·&nbsp; OUR FAMILY · OUR STORIES · OUR LEGACY</footer>
   </main>
