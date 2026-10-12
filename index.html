@@ -24,7 +24,7 @@
     .wordmark{font:600 clamp(43px,7vw,68px)/.95 "Cormorant Garamond",serif;letter-spacing:.03em;margin:0;color:var(--ivory)}
     .english-wordmark{font:500 clamp(17px,2.8vw,23px)/1.1 "DM Sans",sans-serif;letter-spacing:.18em;color:#e7dfcd;margin-top:9px}.submark{margin-top:12px;text-transform:uppercase;letter-spacing:.38em;color:var(--gold);font-size:10px}
     .rule{width:68px;height:1px;background:var(--gold);margin:34px auto}
-    .eyebrow{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.28em;margin:0 0 22px}
+    .eyebrow{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.28em;margin:0 0 22px}.coming-soon-title{font:600 clamp(64px,13vw,142px)/.82 "Cormorant Garamond",serif;letter-spacing:.015em;text-transform:uppercase;color:var(--gold);margin:0 auto;text-shadow:0 0 45px #d2b47718}.coming-soon-title span{display:block}.coming-soon-sub{margin:23px auto 0;color:#f7f1e5;font:400 clamp(24px,4vw,39px)/1.12 "Cormorant Garamond",serif}
     h1{font:400 clamp(48px,8.2vw,92px)/.98 "Cormorant Garamond",serif;letter-spacing:-.025em;margin:0 auto;max-width:850px}
     h1 em{font-weight:400;color:var(--gold)}
     .description{color:var(--muted);font-size:clamp(14px,1.7vw,17px);line-height:1.9;max-width:560px;margin:26px auto 0}
@@ -37,7 +37,7 @@
     @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
     @keyframes pulse{0%,100%{box-shadow:0 0 0 4px #d2b47712}50%{box-shadow:0 0 0 8px #d2b47704}}
     @keyframes breathe{from{opacity:.45;transform:translateX(-50%) scale(.8)}to{opacity:1;transform:translateX(-50%) scale(1.2)}}
-    @media(max-width:600px){.page{padding:30px 23px 74px}.logo{width:78px;height:78px;margin-bottom:18px}.english-wordmark{font-size:16px;letter-spacing:.15em}.submark{font-size:9px;letter-spacing:.27em}.rule{margin:28px auto}.eyebrow{font-size:9px;letter-spacing:.2em;line-height:1.8}h1{font-size:clamp(49px,13vw,72px)}.description{font-size:14px;line-height:1.85;margin-top:22px}.status{font-size:9px;letter-spacing:.12em;padding:11px 14px;margin-top:30px}.heritage{margin-top:32px;font-size:20px;gap:11px}footer{bottom:17px;font-size:9px}}
+    @media(max-width:600px){.page{padding:30px 23px 74px}.logo{width:78px;height:78px;margin-bottom:18px}.english-wordmark{font-size:16px;letter-spacing:.15em}.submark{font-size:9px;letter-spacing:.27em}.rule{margin:28px auto}.eyebrow{font-size:9px;letter-spacing:.2em;line-height:1.8}.coming-soon-title{font-size:clamp(65px,18vw,105px)}.coming-soon-sub{font-size:27px;line-height:1.2;margin-top:20px}h1{font-size:clamp(49px,13vw,72px)}.description{font-size:14px;line-height:1.85;margin-top:22px}.status{font-size:9px;letter-spacing:.12em;padding:11px 14px;margin-top:30px}.heritage{margin-top:32px;font-size:20px;gap:11px}footer{bottom:17px;font-size:9px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
@@ -58,7 +58,8 @@
       <p class="submark">Roots · Stories · Legacy</p>
       <div class="rule" aria-hidden="true"></div>
       <p class="eyebrow">A new chapter in our shared history</p>
-      <h1>Our family has a story.<br><em>Our legacy lives on.</em></h1>
+      <h1 class="coming-soon-title"><span>Coming</span><span>Soon</span></h1>
+      <p class="coming-soon-sub">Our family has a story. <em style="color:var(--gold)">Our legacy lives on.</em></p>
       <p class="description">The generations before us shaped who we are. Their stories, memories, and traditions belong to all of us. We are creating a place for our family to grow its family tree, share its history, and pass our legacy from one generation to the next, wherever life takes us.</p>
       <a class="status" href="tel:+918137826016" aria-label="Call Shaazamaan Shaji at 8137826016"><span class="dot" aria-hidden="true"></span>Coming soon <span aria-hidden="true">·</span> Call 8137826016</a>
       <p class="heritage">One family. Many generations. Our shared legacy.</p><p class="contact-name">Shaazamaan Shaji</p>
