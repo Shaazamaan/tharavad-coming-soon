@@ -22,7 +22,7 @@
     .content{width:min(100%,920px);text-align:center;animation:rise 1.2s ease both}
     .logo{width:94px;height:94px;display:block;margin:0 auto 22px;filter:drop-shadow(0 5px 22px #0003)}
     .wordmark{font:600 clamp(43px,7vw,68px)/.95 "Cormorant Garamond",serif;letter-spacing:.03em;margin:0;color:var(--ivory)}
-    .submark{margin-top:12px;text-transform:uppercase;letter-spacing:.38em;color:var(--gold);font-size:10px}
+    .english-wordmark{font:500 clamp(17px,2.8vw,23px)/1.1 "DM Sans",sans-serif;letter-spacing:.18em;color:#e7dfcd;margin-top:9px}.submark{margin-top:12px;text-transform:uppercase;letter-spacing:.38em;color:var(--gold);font-size:10px}
     .rule{width:68px;height:1px;background:var(--gold);margin:34px auto}
     .eyebrow{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.28em;margin:0 0 22px}
     h1{font:400 clamp(48px,8.2vw,92px)/.98 "Cormorant Garamond",serif;letter-spacing:-.025em;margin:0 auto;max-width:850px}
@@ -32,12 +32,12 @@
     .dot{height:6px;width:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px #d2b47718;animation:pulse 2s ease-in-out infinite}
     .heritage{margin:42px auto 0;max-width:430px;display:flex;align-items:center;gap:18px;color:#b5b9aa;font:italic 22px "Cormorant Garamond",serif}
     .heritage:before,.heritage:after{content:"";height:1px;flex:1;background:#d2b47745}
-    footer{position:absolute;bottom:22px;left:22px;right:22px;display:flex;justify-content:center;text-align:center;color:#8f9c8c;font-size:10px;letter-spacing:.08em}
+    .contact-name{margin-top:18px;color:#d2b477;font-size:12px;letter-spacing:.08em} .status{cursor:pointer;transition:background .2s,color .2s}.status:hover{background:#d2b47718;color:#fff}footer{position:absolute;bottom:22px;left:22px;right:22px;display:flex;justify-content:center;text-align:center;color:#8f9c8c;font-size:10px;letter-spacing:.08em}
     .glow{position:absolute;top:12%;left:50%;width:260px;height:260px;transform:translateX(-50%);border-radius:50%;background:#d2b4770a;filter:blur(50px);z-index:-1;animation:breathe 8s ease-in-out infinite alternate}
     @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
     @keyframes pulse{0%,100%{box-shadow:0 0 0 4px #d2b47712}50%{box-shadow:0 0 0 8px #d2b47704}}
     @keyframes breathe{from{opacity:.45;transform:translateX(-50%) scale(.8)}to{opacity:1;transform:translateX(-50%) scale(1.2)}}
-    @media(max-width:600px){.page{padding:30px 23px 74px}.logo{width:78px;height:78px;margin-bottom:18px}.submark{font-size:9px;letter-spacing:.27em}.rule{margin:28px auto}.eyebrow{font-size:9px;letter-spacing:.2em;line-height:1.8}h1{font-size:clamp(49px,13vw,72px)}.description{font-size:14px;line-height:1.85;margin-top:22px}.status{font-size:9px;letter-spacing:.12em;padding:11px 14px;margin-top:30px}.heritage{margin-top:32px;font-size:20px;gap:11px}footer{bottom:17px;font-size:9px}}
+    @media(max-width:600px){.page{padding:30px 23px 74px}.logo{width:78px;height:78px;margin-bottom:18px}.english-wordmark{font-size:16px;letter-spacing:.15em}.submark{font-size:9px;letter-spacing:.27em}.rule{margin:28px auto}.eyebrow{font-size:9px;letter-spacing:.2em;line-height:1.8}h1{font-size:clamp(49px,13vw,72px)}.description{font-size:14px;line-height:1.85;margin-top:22px}.status{font-size:9px;letter-spacing:.12em;padding:11px 14px;margin-top:30px}.heritage{margin-top:32px;font-size:20px;gap:11px}footer{bottom:17px;font-size:9px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
@@ -54,14 +54,14 @@
         </g>
         <g fill="#D2B477"><circle cx="26" cy="27" r="4"/><circle cx="73" cy="24" r="4"/><circle cx="50" cy="27" r="4"/><circle cx="32" cy="46" r="3"/><circle cx="71" cy="41" r="3"/><circle cx="34" cy="40" r="3"/><circle cx="65" cy="36" r="3"/></g>
       </svg>
-      <p class="wordmark">Tharavad</p>
+      <p class="wordmark">തറവാട്</p><p class="english-wordmark">Tharavad</p>
       <p class="submark">Roots · Stories · Legacy</p>
       <div class="rule" aria-hidden="true"></div>
       <p class="eyebrow">A new chapter in our shared history</p>
       <h1>Every family has a story.<br><em>Yours deserves to live on.</em></h1>
       <p class="description">The names that came before us. The stories passed down through generations. The memories that make us who we are. We are creating a place to bring your family’s history together, and preserve it for generations yet to come.</p>
-      <div class="status"><span class="dot" aria-hidden="true"></span>Something meaningful is taking shape</div>
-      <p class="heritage">Because every root matters</p>
+      <a class="status" href="tel:+918137826016" aria-label="Call Shaazamaan Shaji at 8137826016"><span class="dot" aria-hidden="true"></span>Coming soon <span aria-hidden="true">·</span> Call 8137826016</a>
+      <p class="heritage">Because every root matters</p><p class="contact-name">Shaazamaan Shaji</p>
     </section>
     <footer>THARAVAD &nbsp;·&nbsp; A HOME FOR YOUR FAMILY HISTORY</footer>
   </main>
