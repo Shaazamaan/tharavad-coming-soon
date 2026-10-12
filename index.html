@@ -6,10 +6,20 @@
 <title>Tharavad</title>
 <style>
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
-video{position:fixed;inset:0;display:block;width:100vw;height:100vh;height:100dvh;object-fit:cover;object-position:50% 10%}
+video{position:fixed;inset:0;display:block;width:100vw;height:100vh;height:100dvh;object-fit:cover}
+@media (min-aspect-ratio:1/1) and (max-aspect-ratio:2/1){video{object-position:50% 10%}}
 </style>
 </head>
 <body>
-<video src="tharavad.mp4" autoplay muted loop playsinline disablepictureinpicture preload="auto" aria-hidden="true"></video>
+<video autoplay muted loop playsinline disablepictureinpicture preload="auto" aria-hidden="true">
+<source src="tharavad-portrait.mp4" type="video/mp4" media="(max-aspect-ratio: 1/1)">
+<source src="tharavad-wide.mp4" type="video/mp4" media="(min-aspect-ratio: 2/1)">
+<source src="tharavad.mp4" type="video/mp4">
+</video>
+<script>
+var v=document.querySelector('video');
+function pick(){var r=innerWidth/innerHeight,s=r<1?'tharavad-portrait.mp4':r>2?'tharavad-wide.mp4':'tharavad.mp4';if(v.currentSrc&&v.currentSrc.split('/').pop()!==s){v.src=s;v.play().catch(function(){})}}
+addEventListener('resize',pick);
+</script>
 </body>
 </html>
